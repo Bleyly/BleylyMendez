@@ -27,12 +27,14 @@ export const Empleados = () => {
   const handleSave = async () => {
     if (empleado.id) {
       const updatedEmpleado = await updateEmpleado(empleado);
-      setEmpleados.map((empleado) => {
-        if (empleado.id === updateEmpleado.id) {
-          return updatedEmpleado;
-        }
-        return empleado;
-      });
+      setEmpleados((prevEmpleados) =>
+        prevEmpleados.map((empleado) => {
+          if (empleado.id === updateEmpleado.id) {
+            return updatedEmpleado;
+          }
+          return empleado;
+        })
+      );
     } else {
       const newEmpleado = await createEmpleado(empleado);
       setEmpleados((prevEmpleados) => [...prevEmpleados, newEmpleado]);
