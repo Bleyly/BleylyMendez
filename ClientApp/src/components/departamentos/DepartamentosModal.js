@@ -71,7 +71,7 @@ export const DepartamentosModal = ({
                           target: {
                             name: "empleados",
                             value: event.target.checked
-                              ? [...departamento.empleados]
+                              ? [...departamento.empleados, empleado]
                               : departamento.empleados.filter(
                                   (e) => e.id !== empleado.id
                                 ),
@@ -83,7 +83,7 @@ export const DepartamentosModal = ({
                   <td>
                     {empleado.nombre} {empleado.apellido}
                   </td>
-                  empleado.fechaDeNacimiento.toString().substr(0, 10)
+                  <td>{empleado.fechaDeNacimiento.toString().substr(0, 10)}</td>
                 </tr>
               );
             })}
