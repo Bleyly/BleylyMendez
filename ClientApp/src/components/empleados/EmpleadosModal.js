@@ -83,7 +83,7 @@ export const EmpleadosModal = ({
               name="departamentoId"
               onChange={onChange}
             >
-              <option value="">Seleccione</option>
+              <option value="0">Seleccione</option>
               {departamentos.map((departamento) => {
                 return (
                   <option key={departamento.id} value={departamento.id}>

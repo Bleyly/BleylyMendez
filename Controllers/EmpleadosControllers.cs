@@ -49,7 +49,7 @@ public class EmpleadosController : ControllerBase
         empleado.Cedula = empleadodto.Cedula;
         empleado.FechaDeNacimiento = empleadodto.FechaDeNacimiento;
         empleado.NombreDePosicion = empleadodto.NombreDePosicion;
-        empleado.DepartamentoId = empleadodto.DepartamentoId;
+        empleado.DepartamentoId = empleadodto.DepartamentoId == 0 ? null : empleadodto.DepartamentoId;
 
         var empleadoCreated = _context.Empleados.Add(empleado).Entity;
         _context.SaveChanges();
@@ -74,7 +74,7 @@ public class EmpleadosController : ControllerBase
         empleado.Cedula = updatedEmpleado.Cedula;
         empleado.FechaDeNacimiento = updatedEmpleado.FechaDeNacimiento;
         empleado.NombreDePosicion = updatedEmpleado.NombreDePosicion;
-        empleado.DepartamentoId = updatedEmpleado.DepartamentoId;
+        empleado.DepartamentoId = updatedEmpleado.DepartamentoId == 0 ? null : updatedEmpleado.DepartamentoId;
 
         _context.Empleados.Update(empleado);
         _context.SaveChanges();

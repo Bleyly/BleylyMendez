@@ -8,5 +8,5 @@ public class EmpleadoDTO
     public string Cedula { get; set; } = "";
     public DateTime FechaDeNacimiento { get; set; }
     public string NombreDePosicion { get; set; } = "";
-    public int DepartamentoId { get; set; }
+    public int? DepartamentoId { get; set; }
 }
