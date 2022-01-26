@@ -98,7 +98,7 @@ export const Empleados = () => {
             <th scope="col">Nombre</th>
             <th scope="col">Apellido</th>
             <th scope="col">Cédula</th>
-            <th scope="col">Fecha de Nacimieto</th>
+            <th scope="col">Fecha de Nacimiento</th>
             <th scope="col">Nombre de posición</th>
             <th scope="col">Departamento</th>
             <th scope="col"></th>
@@ -114,7 +114,7 @@ export const Empleados = () => {
                 <td>{empleado.cedula}</td>
                 <td>{empleado.fechaDeNacimiento.toString().substr(0, 10)}</td>
                 <td>{empleado.nombreDePosicion}</td>
-                <td>{empleado.departamento.nombre}</td>
+                <td>{empleado.departamento?.nombre}</td>
                 <td>
                   <span
                     className="link-primary"
