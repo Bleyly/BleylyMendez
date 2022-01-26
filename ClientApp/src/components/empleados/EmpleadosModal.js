@@ -61,8 +61,8 @@ export const EmpleadosModal = ({
             <Form.Control
               type="date"
               placeholder="Fecha de Nacimiento"
-              name="fecha_nacimiento"
-              value={empleado.fecha_nacimiento}
+              name="fechaDeNacimiento"
+              value={empleado.fechaDeNacimiento}
               onChange={onChange}
             />
           </Form.Group>
@@ -70,8 +70,8 @@ export const EmpleadosModal = ({
             <Form.Label>Nombre de posición</Form.Label>
             <Form.Control
               type="text"
-              name="nombredeposicion"
-              value={empleado.nombredeposicion}
+              name="nombreDePosicion"
+              value={empleado.nombreDePosicion}
               onChange={onChange}
             />
           </Form.Group>

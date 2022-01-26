@@ -13,8 +13,8 @@ export const Empleados = () => {
     nombre: "",
     apellido: "",
     cedula: "",
-    fechadenacimiento: "",
-    nombredeposicion: "",
+    fechaDeNacimiento: "",
+    nombreDePosicion: "",
     departamentoId: 0,
     departamento: "",
   });
@@ -42,8 +42,8 @@ export const Empleados = () => {
       nombre: "",
       apellido: "",
       cedula: "",
-      fechadenacimiento: "",
-      nombredeposicion: "",
+      fechaDeNacimiento: "",
+      nombreDePosicion: "",
       departamentoId: 0,
       departamento: "",
     });
@@ -56,8 +56,8 @@ export const Empleados = () => {
       nombre: "",
       apellido: "",
       cedula: "",
-      fechadenacimiento: "",
-      nombredeposicion: "",
+      fechaDeNacimiento: "",
+      nombreDePosicion: "",
       departamentoId: 0,
       departamento: "",
     });
@@ -109,8 +109,8 @@ export const Empleados = () => {
                 <td>{empleado.nombre}</td>
                 <td>{empleado.apellido}</td>
                 <td>{empleado.cedula}</td>
-                <td>{empleado.fecha_Nacimiento.toString().substr(0, 10)}</td>
-                <td>{empleado.nombredeposicion}</td>
+                <td>{empleado.fechaDeNacimiento.toString().substr(0, 10)}</td>
+                <td>{empleado.nombreDePosicion}</td>
                 <td>{empleado.departamento.nombre}</td>
                 <td>
                   <span
