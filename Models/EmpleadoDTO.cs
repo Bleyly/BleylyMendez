@@ -7,5 +7,6 @@ public class EmpleadoDTO
     public string Apellido { get; set; } = "";
     public string Cedula { get; set; } = "";
     public DateTime FechaDeNacimiento { get; set; }
+    public string NombreDePosicion { get; set; } = "";
     public int DepartamentoId { get; set; }
 }
