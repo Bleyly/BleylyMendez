@@ -50,7 +50,6 @@ export const DepartamentosModal = ({
               <th scope="col"></th>
               <th scope="col">Nombre</th>
               <th scope="col">Fecha de Nacimiento</th>
-              <th scope="col"></th>
             </tr>
           </thead>
           <tbody>

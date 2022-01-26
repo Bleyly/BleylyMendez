@@ -12,6 +12,7 @@ export const Departamentos = () => {
     id: 0,
     nombre: "",
     descripcion: "",
+    empleados: [],
   });
   const [departamentos, setDepartamentos] = useState([]);
   const [show, setShow] = useState(false);
@@ -45,6 +46,7 @@ export const Departamentos = () => {
       id: 0,
       nombre: "",
       descripcion: "",
+      empleados: [],
     });
 
     setShow(false);
@@ -56,6 +58,7 @@ export const Departamentos = () => {
       id: 0,
       nombre: "",
       descripcion: "",
+      empleados: [],
     });
 
     setShow(false);
