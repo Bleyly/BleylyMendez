@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Modal, Button, Form } from "react-bootstrap";
 import InputMask from "react-input-mask";
 import { getDepartementos } from "../departamentos/departamentoHelpers";
-import { getEmpleado } from "./empleadosHelpers";
 
 export const EmpleadosModal = ({
   title,
@@ -13,11 +12,9 @@ export const EmpleadosModal = ({
   onSave,
 }) => {
   const [departamentos, setDepartamentos] = useState([]);
-  const [empleados, setEmpleados] = useState([]);
 
   useEffect(() => {
-    setDepartamentos(setDepartamentos);
-    getEmpleado(setEmpleados);
+    getDepartementos(setDepartamentos);
   }, [empleado]);
 
   return (
