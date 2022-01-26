@@ -48,6 +48,7 @@ export const Departamentos = () => {
     });
 
     setShow(false);
+    getDepartementos(setDepartamentos);
   };
 
   const handleClean = async () => {

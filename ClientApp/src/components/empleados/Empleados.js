@@ -51,6 +51,7 @@ export const Empleados = () => {
     });
 
     setShow(false);
+    getEmpleado(setEmpleados);
   };
   const handleClear = async () => {
     setEmpleado({
