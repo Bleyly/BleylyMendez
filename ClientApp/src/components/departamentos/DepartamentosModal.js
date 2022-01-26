@@ -1,7 +1,7 @@
 import React from "react";
 import { Modal, Button, Form } from "react-bootstrap";
 
-export const DepartamentoModal = ({
+export const DepartamentosModal = ({
   title,
   show,
   onClose,
@@ -45,7 +45,7 @@ export const DepartamentoModal = ({
           Cerrar
         </Button>
         <Button variant="primary" onClick={() => onSave()}>
-          Guardar Cambios
+          Guardar
         </Button>
       </Modal.Footer>
     </Modal>
